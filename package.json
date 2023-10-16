@@ -1,0 +1,25 @@
+{
+  "name": "font-compress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "pkgwin": "pkg . -t node14-win-x64"
+  },
+  "bin": "./index.js",
+  "pkg": {
+    "assets": [
+      "index.html",
+      "需要抽取的文字.txt",
+      "fonts"
+    ],
+    "outputPath": "dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hayes0724/web-font-converter": "^1.0.5",
+    "font-spider": "^1.3.5"
+  }
+}
